@@ -4,8 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <style>
+        .container-content{
+            display: flex;
+        }
+        .content{
+            font-size: 10px;
+        }
+        .sidebar {
+            height: 100vh;
+            width: 40%;
+            text-align: center;
+            background-color: #252525;
+            padding-top: 20px;
+            color: white;
+        }
+        .mainbar {
+            height: 100vh;
+            width: 60%; 
+            text-align: center;
+            padding-top: 20px;
+            color: Black;
+        }
+        .profile {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        p {
+            text-align: justify;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .cursos {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 25px; 
+        }
+        .data-conclusao {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .data-conclusao p {
+            margin: 0; /* Remove as margens padrão dos parágrafos */
+            line-height: 1;
+        }
+        .highlight {
+            font-weight: bold;
+        }
+        ul{
+            font-size: 10px;
+            text-align: left;
+            margin-left: 25px;
+        }
+        progress{
+            width: 50px;
+            height: 5px;    
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container-content">
+        <div class="sidebar">
+            <h5>Antony Anderson Vieira Seixas</h5>  
+            <hr>
+            <p>Informações pessoais</p>
+            <ul>
+                <li>Email: antony01anderson@gmail.com</li>
+                <li>Número: (75)98815-2683</li>
+                <li>Cidade: Valença-BA</li>
+                <li>Nacionalidade: Brasileira</li>
+            </ul>
+            <p>Perfis sociais</p>
+            <ul>
+                <li>Linkedin: https://www.linkedin.com/in/antony-anderson-7238701bb/</li>
+                <li>GitHub: https://github.com/Antony-Anderson</li>
+            </ul>
+            <p>Competências</p>
+            <ul>
+                <li>Laravel</li>
+                <div class="progress" style="height: 1px; width: 100px;">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <li>PHP</li>
+                <div class="progress" style="height: 1px; width: 100px;">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <li>HTML5</li>
+                <div class="progress" style="height: 1px; width: 100px;">
+                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <li>JavaScript</li>
+                <div class="progress" style="height: 1px; width: 100px;">
+                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <li>Vue3</li>
+                <div class="progress" style="height: 1px; width: 100px;">
+                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <li>MySQL</li>
+                <div class="progress" style="height: 1px; width: 100px;">
+                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <li>Git</li>
+                <div class="progress" style="height: 1px; width: 100px;">
+                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <li>CSS</li>
+                <div class="progress" style="height: 1px; width: 100px;">
+                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </ul>
+            <p>Idiomas</p>
+            <ul>
+                <li>Inglês básico</li>
+                <div class="progress" style="height: 1px; width: 100px;">
+                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </ul>
+        </div>
+        <div class="mainbar">
+            <h5>Perfil</h5>
+            <div class="profile">
+                <p>Sou Programador com um ano de experiência em desenvolvimento web, focado em Laravel, PHP, HTML e JavaScript.</p>
+                <p>Durante este período, participei de projetos que me permitiram aplicar e aprimorar meus conhecimentos na criação de aplicações web.</p>
+                <p>Tenho uma boa compreensão dos conceitos básicos de programação e estou sempre empenhado em aprender e melhorar minhas habilidades.</p>
+                <p>Sou dedicado, detalhista e tenho uma forte paixão por tecnologia e desenvolvimento de software.</p>
+            </div>
+            <div class="profile">
+                <h5>Formação</h5>
+                <p>Segundo grau completo, Ifbaiano, Valença</p> 
+                <p>Téc. Agropecuária Integrado</p>
+            </div>
+            <div class="profile">
+                <h5>Cursos</h5>
+                <div class="cursos">
+                    <strong><p>Formação em laravel, Alura</p></strong>
+                    <p class="data-conclusao">Maio de 2024</p>
+                </div>
+                <div class="cursos">
+                    <strong><p> Formação php, Alura</p></strong>
+                    <p class="data-conclusao">Janeiro 2024</p>    
+                </div>
+                <div class="cursos">
+                    <strong><p>Formação JavaScript, Alura</p></strong>
+                    <p class="data-conclusao">Março 2024</p>    
+                </div>
+                <div class="cursos">
+                    <strong><p>Formação lógica de programação, Alura</p></strong>
+                    <p class="data-conclusao">Fevereiro 2024</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
