@@ -7,32 +7,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
     <style>
-        .container-content{
+        .container-content {
             display: flex;
+            flex-wrap: wrap;
         }
-        .content{
+        .content {
             font-size: 10px;
         }
         .sidebar {
             height: 100vh;
-            width: 40%;
+            width: 35%;
             text-align: center;
             background-color: #252525;
             padding-top: 20px;
             color: white;
+            box-sizing: border-box;
         }
         .mainbar {
             height: 100vh;
-            width: 60%; 
+            width: 65%;
             text-align: center;
             padding-top: 20px;
             color: Black;
+            box-sizing: border-box;
         }
         .profile {
             max-width: 600px;
             margin: 0 auto;
             border: 1px solid #ddd;
             border-radius: 8px;
+            padding: 10px;
         }
         p {
             text-align: justify;
@@ -42,28 +46,29 @@
         .cursos {
             display: flex;
             flex-direction: column;
-            margin-bottom: 5px;  
+            margin-bottom: 2px; /* Reduzida a margem inferior */
         }
         .data-conclusao {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
+            font-size: 9px; /* Reduzir o tamanho da fonte */
         }
         .data-conclusao p {
-            margin: 0; /* Remove as margens padrão dos parágrafos */
+            margin: 0;
             line-height: 1;
         }
         .highlight {
             font-weight: bold;
         }
-        ul{
+        ul {
             font-size: 10px;
             text-align: left;
             margin-left: 25px;
         }
-        progress{
+        progress {
             width: 50px;
-            height: 5px;    
+            height: 5px;
         }
     </style>
 </head>
@@ -147,11 +152,11 @@
             <div class="profile">
                 <h5>Cursos</h5>
                 <div class="cursos">
-                    <strong><p>Formação em laravel, Alura</p></strong>
+                    <strong><p>Formação em Laravel, Alura</p></strong>
                     <p class="data-conclusao">Maio de 2024</p>
                 </div>
                 <div class="cursos">
-                    <strong><p> Formação php, Alura</p></strong>
+                    <strong><p>Formação PHP, Alura</p></strong>
                     <p class="data-conclusao">Janeiro 2024</p>    
                 </div>
                 <div class="cursos">
@@ -159,11 +164,11 @@
                     <p class="data-conclusao">Março 2024</p>    
                 </div>
                 <div class="cursos">
-                    <strong><p>Formação lógica de programação, Alura</p></strong>
+                    <strong><p>Formação Lógica de Programação, Alura</p></strong>
                     <p class="data-conclusao">Fevereiro 2024</p>    
                 </div>
                 <div class="cursos">
-                    <strong><p>Formação melhore sua experiência de desenvolvimento com TypeScript, Alura</p></strong>
+                    <strong><p>Formação Melhore sua Experiência de Desenvolvimento com TypeScript, Alura</p></strong>
                     <p class="data-conclusao">Junho 2024</p>    
                 </div>
                 <div class="cursos">
@@ -172,12 +177,11 @@
                 </div>
                 <div class="cursos">
                     <strong><p>Formação SQL com PostgreSQL</p></strong>
-                    <p class="data-conclusao">julho 2024</p>    
+                    <p class="data-conclusao">Julho 2024</p>    
                 </div>
             </div>
         </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
