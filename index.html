@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculo</title>
+    <title>Currículo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
         .container-content {
             display: flex;
             flex-wrap: wrap;
@@ -24,7 +28,6 @@
             box-sizing: border-box;
         }
         .mainbar {
-            height: 100vh;
             width: 65%;
             text-align: center;
             padding-top: 20px;
@@ -44,19 +47,10 @@
             margin-right: 15px;
         }
         .cursos {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 2px; /* Reduzida a margem inferior */
+            margin-bottom: 15px; 
         }
         .data-conclusao {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            font-size: 9px; /* Reduzir o tamanho da fonte */
-        }
-        .data-conclusao p {
-            margin: 0;
-            line-height: 1;
+            font-size: 9px; 
         }
         .highlight {
             font-weight: bold;
@@ -69,6 +63,27 @@
         progress {
             width: 50px;
             height: 5px;
+        }
+        .link-financeiro {
+            text-decoration: none;
+        }
+        .link-redes-socias {
+            text-decoration: none;
+            color: #fff;
+        }
+        h5 {
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: -0.5px; /* Reduz o espaçamento entre letras */
+            margin-bottom: 10px; /* Espaço abaixo do título */
+        }
+        .profile h5 {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .cursos strong p {
+            font-size: 12px;
+            margin: 0; /* Remove margem padrão do parágrafo */
         }
     </style>
 </head>
@@ -86,9 +101,26 @@
             </ul>
             <p>Perfis sociais</p>
             <ul>
-                <li>Linkedin: https://www.linkedin.com/in/antony-anderson-7238701bb/</li>
-                <li>GitHub: https://github.com/Antony-Anderson</li>
+                <li>
+                    <a href="https://www.linkedin.com/in/antony-anderson-7238701bb/" class="link-redes-socias" target="_blank">
+                        Linkedin
+                        <i class="fa-brands fa-linkedin" style="color: #3684bf;" ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Antony-Anderson" class="link-redes-socias" target="_blank">
+                        Github
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://antony-portifolio.vercel.app/" class="link-redes-socias" target="_blank">
+                        Portifólio
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
             </ul>
+            <hr>
             <p>Competências</p>
             <ul>
                 <li>Laravel</li>
@@ -139,10 +171,14 @@
         <div class="mainbar">
             <h5>Perfil</h5>
             <div class="profile">
-                <p>Sou Programador com um ano de experiência em desenvolvimento web, focado em Laravel, PHP, HTML e JavaScript.</p>
+                <p>Sou Programador com um ano de experiência em desenvolvimento web, focado em Laravel, PHP, JavaScript, Vue3, Sql.</p>
                 <p>Durante este período, participei de projetos que me permitiram aplicar e aprimorar meus conhecimentos na criação de aplicações web.</p>
-                <p>Tenho uma boa compreensão dos conceitos básicos de programação e estou sempre empenhado em aprender e melhorar minhas habilidades.</p>
+                <p>Tenho uma boa compreensão dos conceitos da programação e estou sempre empenhado em aprender e melhorar minhas habilidades.</p>
                 <p>Sou dedicado, detalhista e tenho uma forte paixão por tecnologia e desenvolvimento de software.</p>
+            </div>
+            <div class="profile">
+                <h5>Experiência</h5>
+                <p>Um projeto que realizei demonstrando minhas habilidades e conhecimentos, onde tem várias fucionalidades, incluindo testes unitários, documentação, e muito mais.. <a href="https://financeiro-empire.ddns.net" target="_blank" class="link-financeiro">Financeiro</a></p>
             </div>
             <div class="profile">
                 <h5>Formação</h5>
@@ -151,38 +187,58 @@
             </div>
             <div class="profile">
                 <h5>Cursos</h5>
-                <div class="cursos">
-                    <strong><p>Formação em Laravel, Alura</p></strong>
-                    <p class="data-conclusao">Maio de 2024</p>
-                </div>
-                <div class="cursos">
-                    <strong><p>Formação PHP, Alura</p></strong>
-                    <p class="data-conclusao">Janeiro 2024</p>    
-                </div>
-                <div class="cursos">
-                    <strong><p>Formação JavaScript, Alura</p></strong>
-                    <p class="data-conclusao">Março 2024</p>    
-                </div>
-                <div class="cursos">
-                    <strong><p>Formação Lógica de Programação, Alura</p></strong>
-                    <p class="data-conclusao">Fevereiro 2024</p>    
-                </div>
-                <div class="cursos">
-                    <strong><p>Formação Melhore sua Experiência de Desenvolvimento com TypeScript, Alura</p></strong>
-                    <p class="data-conclusao">Junho 2024</p>    
-                </div>
-                <div class="cursos">
-                    <strong><p>Formação Ouse com o Framework Vue.js 3</p></strong>
-                    <p class="data-conclusao">Junho 2024</p>    
-                </div>
-                <div class="cursos">
-                    <strong><p>Formação SQL com PostgreSQL</p></strong>
-                    <p class="data-conclusao">Julho 2024</p>    
+                <div class="row">
+                    <div class="col-6">
+                        <div class="cursos">
+                            <strong><p>Formação em Laravel, Alura</p></strong>
+                            <p class="data-conclusao">Maio de 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="cursos">
+                            <strong><p>Formação PHP, Alura</p></strong>
+                            <p class="data-conclusao">Janeiro de 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="cursos">
+                            <strong><p>Formação JavaScript, Alura</p></strong>
+                            <p class="data-conclusao">Março de 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="cursos">
+                            <strong><p>Formação TypeScript, Alura</p></strong>
+                            <p class="data-conclusao">Junho de 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="cursos">
+                            <strong><p>Formação Ouse com o Framework Vue.js 3</p></strong>
+                            <p class="data-conclusao">Junho de 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="cursos">
+                            <strong><p>Formação SQL com PostgreSQL</p></strong>
+                            <p class="data-conclusao">Julho de 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="cursos">
+                            <strong><p>Curso Javascript, curso em vídeo</p></strong>
+                            <p class="data-conclusao">Julho de 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="cursos">
+                            <strong><p>Curso Https, Alura</p></strong>
+                            <p class="data-conclusao">Julho de 2024</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
