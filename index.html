@@ -123,11 +123,15 @@
             <hr>
             <p>Competências</p>
             <ul>
+                <li>PHP</li>
+                <div class="progress" style="height: 1px; width: 100px;">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
                 <li>Laravel</li>
                 <div class="progress" style="height: 1px; width: 100px;">
                     <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <li>PHP</li>
+                <li>Symfony</li>
                 <div class="progress" style="height: 1px; width: 100px;">
                     <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
@@ -162,28 +166,30 @@
             </ul>
             <p>Idiomas</p>
             <ul>
-                <li>Inglês básico</li>
+                <li>Inglês intermediário</li>
                 <div class="progress" style="height: 1px; width: 100px;">
-                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </ul>
         </div>
         <div class="mainbar">
-            <h5>Perfil</h5>
             <div class="profile">
-                <p>Sou Programador com um ano de experiência em desenvolvimento web, focado em Laravel, PHP, JavaScript, Vue3, Sql.</p>
+                <h5>Perfil</h5>
+                Experiência profissional: 
+                        <strong id="tempo-experiencia"></strong>
+                em desenvolvimento web, focado em Symfony, Laravel, PHP, JavaScript, Vue3, Sql.</p>
                 <p>Durante este período, participei de projetos que me permitiram aplicar e aprimorar meus conhecimentos na criação de aplicações web.</p>
-                <p>Tenho uma boa compreensão dos conceitos da programação e estou sempre empenhado em aprender e melhorar minhas habilidades.</p>
-                <p>Sou dedicado, detalhista e tenho uma forte paixão por tecnologia e desenvolvimento de software.</p>
             </div>
             <div class="profile">
                 <h5>Experiência</h5>
+                <p>Trabalho atualmente em uma empresa chamada blue company com o framework Symfony, ultilizando MySQL, para mais informações acesse meu: <a href="https://antony-portifolio.vercel.app/" target="_blank" class="link-portifolio">Portifólio</a></p>
                 <p>Um projeto que realizei demonstrando minhas habilidades e conhecimentos, onde tem várias fucionalidades, incluindo testes unitários, documentação, e muito mais.. <a href="https://financeiro-empire.ddns.net" target="_blank" class="link-financeiro">Financeiro</a></p>
             </div>
             <div class="profile">
                 <h5>Formação</h5>
                 <p>Segundo grau completo, Ifbaiano, Valença</p> 
                 <p>Téc. Agropecuária Integrado</p>
+                <p>Cursando atualmente engenharia de sofwtare na estácio</p>
             </div>
             <div class="profile">
                 <h5>Cursos</h5>
@@ -241,4 +247,32 @@
         </div>
     </div>
 </body>
+
+<script>
+    function calcularExperiencia(dataInicio) {
+        const inicio = new Date(dataInicio);
+        const hoje = new Date();
+
+        let anos = hoje.getFullYear() - inicio.getFullYear();
+        let meses = hoje.getMonth() - inicio.getMonth();
+
+        if (meses < 0) {
+            anos--;
+            meses += 12;
+        }
+
+        return { anos, meses };
+    }
+
+    // DATA DE INÍCIO DA SUA EXPERIÊNCIA
+    const experiencia = calcularExperiencia('2024-08-25');
+
+    const texto =
+        experiencia.anos > 0
+            ? `${experiencia.anos} ano(s) e ${experiencia.meses} mês(es)`
+            : `${experiencia.meses} mês(es)`;
+
+    document.getElementById('tempo-experiencia').innerText = texto;
+</script>
+
 </html>
